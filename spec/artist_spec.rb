@@ -48,6 +48,7 @@ describe 'Artist' do
     it 'lists all of the artist\'s songs' do
       dirty_diana = Song.new("Dirty Diana")
       billie_jean = Song.new("Billie Jean")
+      # artist=Artist.new("Michael Jackson")
       artist.add_song(dirty_diana)
       artist.add_song(billie_jean)
       expect{artist.print_songs}.to output("Dirty Diana\nBillie Jean\n").to_stdout
